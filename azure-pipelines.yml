@@ -53,13 +53,6 @@ steps:
     arguments: 'install --global dotnet-reportgenerator-globaltool'
 
 - task: DotNetCoreCLI@2
-  displayName: 'Install package'
-  inputs:
-    workingDirectory: ./Tailspin.SpaceGame.Web
-    command: 'add package'
-    arguments: 'coverlet.msbuild '
-
-- task: DotNetCoreCLI@2
   displayName: 'Run unit tests - $(buildConfiguration)'
   inputs:
     command: 'test'
