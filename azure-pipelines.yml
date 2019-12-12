@@ -56,8 +56,8 @@ steps:
   displayName: 'Install package'
   inputs:
     workingDirectory: ./Tailspin.SpaceGame.Web
-    command: 'add'
-    arguments: 'package coverlet.msbuild '
+    command: 'add package'
+    arguments: 'coverlet.msbuild '
 
 - task: DotNetCoreCLI@2
   displayName: 'Run unit tests - $(buildConfiguration)'
